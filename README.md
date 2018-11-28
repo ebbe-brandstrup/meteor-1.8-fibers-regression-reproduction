@@ -1,6 +1,6 @@
 # README
 
-Repo for reproducing issue with allocation bomb of fibers in Meteor 1.7+.
+Meteor 1.8.0.1 repo for reproducing issue with allocation bomb of fibers in Meteor 1.7+.
 
 ```
 meteor npm install

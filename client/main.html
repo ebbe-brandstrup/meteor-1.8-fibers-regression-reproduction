@@ -1,0 +1,13 @@
+<head>
+    <title>mem-leak</title>
+</head>
+
+<body>
+    <h1>Welcome to Meteor!</h1>
+
+    {{> hello}}
+</body>
+
+<template name="hello">
+    Now spamming <i>Meteor.call('startLotsOfFibers')</i>...
+</template>

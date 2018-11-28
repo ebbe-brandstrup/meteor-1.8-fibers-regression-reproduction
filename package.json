@@ -1,0 +1,23 @@
+{
+  "name": "mem-leak-meteor-1.8.0.1",
+  "private": true,
+  "scripts": {
+    "start": "meteor run --inspect",
+    "start:gc": "TOOL_NODE_FLAGS=\"--gc-interval=100 --trace-gc-verbose\" meteor run --inspect"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.1.5",
+    "fibers": "2.0.0",
+    "meteor-node-stubs": "^0.4.1"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "//": [
+      "dependency comments:",
+      "  fibers v2.0.0 is imported to have access to its 'fibersCreated' counter."
+    ]
+  }
+}

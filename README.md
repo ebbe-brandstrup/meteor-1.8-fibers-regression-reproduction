@@ -10,3 +10,5 @@ meteor npm run start
 Then open some browser tabs on `http://localhost:3000` and observe the server console output report the number of fibers created.
 
 Opening 5+ tabs (and having them visible on-screen to prevent your browser from throttling JS) will cause thousands of fibers to be created quickly.
+
+Used for https://github.com/meteor/meteor/issues/10359.
